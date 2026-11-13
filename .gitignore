@@ -1,0 +1,13 @@
+# Ambientes virtuais e caches do Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Configurações locais de IDE
+.idea/workspace.xml
+.idea/**/workspace.xml
+
+# Arquivos gerados por ferramentas de sistema
+.DS_Store

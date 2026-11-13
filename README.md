@@ -66,7 +66,7 @@ Recomenda-se utilizar um ambiente virtual:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install numpy scikit-learn
+pip install -r requirements.txt
 ```
 
 No Windows, a ativação pode ser feita com:
@@ -83,11 +83,24 @@ python main.py
 
 O programa exibirá a evolução da perda durante o treinamento e a acurácia final no conjunto de teste.
 
+## Estrutura do projeto
+
+```text
+rede_neural/
+├── main.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
 ## Arquivos do projeto
 
 | Arquivo | Descrição |
 |---|---|
 | [`main.py`](main.py) | Código principal do projeto. Carrega e prepara os dados, define as funções de ativação, implementa a classe da rede neural, realiza o treinamento e calcula a acurácia. |
 | [`README.md`](README.md) | Documentação do projeto, com seu objetivo acadêmico, funcionamento, instruções de execução e descrição dos arquivos. |
-| `.venv/` | Ambiente virtual local criado para instalar as dependências. É um diretório de configuração do ambiente e não faz parte da implementação da rede neural. |
+| [`requirements.txt`](requirements.txt) | Lista as versões das bibliotecas necessárias para executar o projeto: NumPy e Scikit-Learn. |
+| [`.gitignore`](.gitignore) | Define arquivos e diretórios locais que não devem ser enviados ao repositório, como o ambiente virtual, caches e configurações pessoais da IDE. |
+
+O diretório `.venv/` pode existir localmente após a instalação das dependências, mas não é versionado. Ele é um ambiente gerado automaticamente e pode ser recriado com os comandos descritos neste README.
 
